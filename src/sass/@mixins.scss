@@ -1,0 +1,55 @@
+//
+//  # text, paragraph
+//
+@mixin lh($pxheight, $fontSize: 14) {
+  line-height: ($pxheight / $fontSize);
+}
+
+//
+//  # media query
+//
+@mixin mq($break) {
+  @if $break == 'xxs' {
+    @media #{$xxs} {
+      @content;
+    }
+  } @else if $break == 'xs' {
+    @media #{$xs} {
+      @content;
+    }
+  } @else if $break == 'sm' {
+    @media #{$sm} {
+      @content;
+    }
+  } @else if $break == 'md' {
+    @media #{$md} {
+      @content;
+    }
+  } @else if $break == 'lg' {
+    @media #{$lg} {
+      @content;
+    }
+  } @else if $break == 'xlg' {
+    @media #{$xlg} {
+      @content;
+    }
+  } @else if $break == 'landscape' {
+    @media only screen and (max-width: 900px) and (orientation: landscape) {
+      @content;
+    }
+  }
+}
+
+//
+//  # clearfix
+//
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}

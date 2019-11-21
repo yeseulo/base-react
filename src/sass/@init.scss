@@ -1,0 +1,63 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  min-height: 100%;
+  font-size: 10px;
+  position: relative;
+  overflow: auto;
+}
+
+body {
+  width: 100%;
+  color: $black;
+  font-family: $font;
+  font-weight: normal;
+  font-size: 14px;
+  @include lh(20, 14);
+  background-color: $bg;
+  word-break: break-word;
+}
+
+// remove the browser bouncing
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+// 공통
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    color: $link;
+  }
+}
+
+.screen-reader-text,
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+}
+
+ul {
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+}

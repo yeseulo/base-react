@@ -1,0 +1,25 @@
+// screen
+$xxs: 'only screen and (max-width: 480px)';
+$xs: 'only screen and (max-width: 767px)';
+$sm: 'only screen and (min-width: 768px)';
+$md: 'only screen and (min-width: 992px)';
+$lg: 'only screen and (min-width: 1170px)';
+
+// color
+$orange: rgb(255, 125, 0);
+$orange1: rgba(255, 125, 0, 0.9);
+$orange2: rgba(255, 160, 0, 0.9);
+$orange3: rgba(255, 98, 20, 0.9);
+$blue: rgb(0, 0, 255);
+$black: #000;
+$white: #fff;
+$gray: rgb(153, 153, 153);
+
+$brand: $orange;
+$link: $blue;
+$text: $blue;
+
+$bg: $white;
+
+// font
+$font: "Helvetica Neue", Helvetica, Arial, sans-serif;

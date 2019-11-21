@@ -1,0 +1,15 @@
+@charset 'utf-8';
+
+@import "../../node_modules/normalize-scss/sass/_normalize.scss";
+@include normalize();
+
+@import '@variables';
+@import '@mixins';
+@import '@init';
+
+body {
+  background: #444888;
+  color: #fff;
+  border-radius: 3px;
+}
+
